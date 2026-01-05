@@ -1,0 +1,211 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aleema's Ramen | Crafted Bowls, Cozy Vibes</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="A cozy ramen spot featuring signature bowls, seasonal specials, and handcrafted toppings.">
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="logo" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="32" cy="40" rx="22" ry="10" fill="#E8D8C7"/>
+            <path d="M10 28c4 7 16 10 22 10s18-3 22-10" stroke="#9C7C65" stroke-width="3" fill="none"/>
+            <path d="M18 22c4-4 12-4 16 0M30 18c5-5 14-5 19 0" stroke="#9C7C65" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">Aleema's Ramen Shop</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#menu">Menu</a>
+        <a href="#about">Our Story</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact" class="btn small">Reserve</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero (uses your image ramen-2.jpg) -->
+  <section class="hero" style="--hero-bg: url('ramen-2.jpg');">
+    <div class="overlay"></div>
+    <div class="container hero-inner">
+      <h1 class="headline">Warm Bowls, Gentle Happiness</h1>
+      <p class="tagline">Silky broth, springy noodles, and toppings that sing. Come get cozy.</p>
+      <div class="cta-row">
+        <a href="#menu" class="btn primary">Explore Menu</a>
+        <a href="#visit" class="btn ghost">Find Us</a>
+      </div>
+      <ul class="hero-badges" aria-label="Highlights">
+        <li>Slow-simmered broths</li>
+        <li>Handmade noodles</li>
+        <li>Seasonal greens</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Featured Bowls -->
+  <section id="menu" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Bowls</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-top tag-green">New</div>
+          <h3>Matcha Shio</h3>
+          <p>Light, clear broth with a whisper of matcha, bamboo shoots, and yuzu zest.</p>
+          <div class="meta">
+            <span class="chip chip-green">Light</span>
+            <span class="chip chip-brown">Citrus</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-top tag-pink">Signature</div>
+          <h3>Umami Tonkotsu</h3>
+          <p>Rich, creamy pork broth, chashu, black garlic oil, and soft yolk egg.</p>
+          <div class="meta">
+            <span class="chip chip-brown">Rich</span>
+            <span class="chip chip-pink">Garlic</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-top tag-brown">Vegan</div>
+          <h3>Garden Miso</h3>
+          <p>Roasted veg miso, marinated tofu, corn, nori, and spring onions.</p>
+          <div class="meta">
+            <span class="chip chip-green">Fresh</span>
+            <span class="chip chip-pink">Miso</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / About -->
+  <section id="about" class="section soft">
+    <div class="container split">
+      <div class="panel">
+        <h2 class="section-title">Our Story</h2>
+        <p>
+          We’re a small team of ramen lovers, simmering broths low and slow, sourcing local greens,
+          and crafting noodles with care. Every bowl is a warm invite to pause, breathe, and smile.
+        </p>
+        <ul class="list-check">
+          <li>Locally sourced produce</li>
+          <li>House-made tare and oils</li>
+          <li>Thoughtful seasonal specials</li>
+        </ul>
+      </div>
+      <div class="panel accent">
+        <h3>Hours</h3>
+        <p>Mon–Thu: 11:30–21:00</p>
+        <p>Fri–Sat: 11:30–22:00</p>
+        <p>Sun: 12:00–20:00</p>
+        <hr />
+        <h3>Location</h3>
+        <p>Dera Ismail Khan , Pakistan</p>
+        <a id="visit" href="#contact" class="btn small">Get Directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">What Guests Say</h2>
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote>Broth so comforting and layered—I think about it all week.</blockquote>
+          <figcaption>— Mia</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>The matcha shio is bright and elegant. A lovely surprise.</blockquote>
+          <figcaption>— Ken</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>Soft eggs, springy noodles, cozy vibes. Instant favorite.</blockquote>
+          <figcaption>— Aria</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section soft">
+    <div class="container contact">
+      <h2 class="section-title">Reserve a Table</h2>
+      <form class="form" action="#" method="post">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required />
+        </label>
+        <label>
+          Date
+          <input type="date" name="date" required />
+        </label>
+        <label>
+          Time
+          <input type="time" name="time" required />
+        </label>
+        <label>
+          Guests
+          <input type="number" name="guests" min="1" max="8" value="2" />
+        </label>
+        <button class="btn primary" type="submit">Book Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand muted">Aleema's Ramen Shop</div>
+        <p>Crafted bowls, gentle colors, cozy atmosphere.</p>
+      </div>
+      <div>
+        <strong>Links</strong>
+        <ul class="links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#contact">Reserve</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Follow</strong>
+        <ul class="links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">Maps</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container tiny">© <span id="year"></span> Aleema's Ramen. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle + dynamic year
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
